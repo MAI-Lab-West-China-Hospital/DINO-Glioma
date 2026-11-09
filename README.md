@@ -87,6 +87,8 @@ python test.py \
 
 ## Notes
 
+- For repository upload and synchronization instructions, see [GitHub 上传与同步指南](GITHUB_WORKFLOW.md).
+
 - Match task order, modality order, backbone configuration and preprocessing to the checkpoint. Keep missing molecular labels masked rather than converting them to negative labels.
 - Preserve reference-mask provenance. Internally generated nnUNetv2 masks are automated references and should not be described as manual annotations.
 - Keep the evaluation grid and empty-reference-region policy consistent when comparing Dice scores. The reported overall Mean Dice is the unweighted average of the three regional cohort means.
